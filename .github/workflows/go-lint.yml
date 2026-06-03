@@ -52,7 +52,7 @@ jobs:
     runs-on: ${{ fromJSON(inputs.runs-on) }} # yamllint disable-line
     steps:
       - name: 'Checkout'
-        uses: 'actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683' # ratchet:actions/checkout@v4
+        uses: 'actions/checkout@df4cb1c069e1874edd31b4311f1884172cec0e10' # ratchet:actions/checkout@v4
 
       - name: 'Lint Go Modules'
         uses: 'abcxyz/actions/.github/actions/lint-go-modules@main' # ratchet:exclude
@@ -73,7 +73,7 @@ jobs:
     runs-on: ${{ fromJSON(inputs.runs-on) }} # yamllint disable-line
     steps:
       - name: 'Checkout'
-        uses: 'actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683' # ratchet:actions/checkout@v4
+        uses: 'actions/checkout@df4cb1c069e1874edd31b4311f1884172cec0e10' # ratchet:actions/checkout@v4
 
       - name: 'Lint Go'
         uses: 'abcxyz/actions/.github/actions/lint-go@main' # ratchet:exclude
